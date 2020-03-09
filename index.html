@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Game Guidez</title>
+</head>
+<body class="grey lighten-5">
+    <!-- NAVBAR -->
+    <nav class="z-depth-0 grey lighten-3">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">
+                <img src="img/logo.png" style="width: 50px; margin-top: 10px">
+            </a>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
+                <li class="logged-in">
+                    <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
+                </li>
+                <li class="logged-in">
+                    <a href="#" class="grey-text modal-trigger" data-target="modal-account">Logout</a>
+                </li>
+                <li class="logged-in">
+                    <a href="#" class="grey-text" id="logout">Create Guide</a>
+                </li>
+                <li class="logged-out">
+                    <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+                </li>
+                <li class="logged-out">
+                    <a href="#" class="grey-text modal-trigger" data-target="modal-login">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SIGN UP MODAL -->
+    <div class="modal" id="modal-signup">
+        <div class="modal-content">
+            <h4>Sign Up</h4><br />
+            <form  id="signup-form">
+                <div class="input-field">
+                    <input type="email" required id="signup-email">
+                    <label for="signup-email">Email address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" required id="signup-password">
+                    <label for="signup-password">Choose password</label>
+                </div>
+                <button class="btn yellow darken-2 z-depth-0">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
